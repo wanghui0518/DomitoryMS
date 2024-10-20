@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Domitory - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Domitory.res" /d "NDEBUG" "E:\»Ò”¢‘¥\¡∑œ∞\Domitory\Domitory.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Domitory.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\AddDIRecordDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\AddForeRecordDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\AddOnDutyRDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\AddPRecordDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\AddStuReDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\AdministratorRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\Domitory.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\DomitoryDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\DomitoryInfoDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\DomitoryRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\ForeignRegDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\ForeignRegRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\FRegisterRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\LoginDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\ODScoreRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\OnDutyDlg.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\OnDutyPage1.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\OnDutyPage2.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\OnDutyPage3.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\OnDutyRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\PersonODRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\StudentRS.cpp"
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\StuInfoDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE1.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Domitory.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\»Ò”¢‘¥\¡∑œ∞\Domitory\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Domitory.pdb" /machine:I386 /out:"Release/Domitory.exe" 
+".\Release\AddDIRecordDlg.obj"
+".\Release\AddForeRecordDlg.obj"
+".\Release\AddOnDutyRDlg.obj"
+".\Release\AddPRecordDlg.obj"
+".\Release\AddStuReDlg.obj"
+".\Release\AdministratorRS.obj"
+".\Release\Domitory.obj"
+".\Release\DomitoryDlg.obj"
+".\Release\DomitoryInfoDlg.obj"
+".\Release\DomitoryRS.obj"
+".\Release\ForeignRegDlg.obj"
+".\Release\ForeignRegRS.obj"
+".\Release\FRegisterRS.obj"
+".\Release\LoginDlg.obj"
+".\Release\ODScoreRS.obj"
+".\Release\OnDutyDlg.obj"
+".\Release\OnDutyPage1.obj"
+".\Release\OnDutyPage2.obj"
+".\Release\OnDutyPage3.obj"
+".\Release\OnDutyRS.obj"
+".\Release\PersonODRS.obj"
+".\Release\StdAfx.obj"
+".\Release\StudentRS.obj"
+".\Release\StuInfoDlg.obj"
+".\Release\Domitory.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddDIRecordDlg.cpp
+AddForeRecordDlg.cpp
+AddOnDutyRDlg.cpp
+AddPRecordDlg.cpp
+AddStuReDlg.cpp
+AdministratorRS.cpp
+Domitory.cpp
+DomitoryDlg.cpp
+DomitoryInfoDlg.cpp
+DomitoryRS.cpp
+ForeignRegDlg.cpp
+ForeignRegRS.cpp
+FRegisterRS.cpp
+LoginDlg.cpp
+ODScoreRS.cpp
+OnDutyDlg.cpp
+OnDutyPage1.cpp
+OnDutyPage2.cpp
+OnDutyPage3.cpp
+OnDutyRS.cpp
+Generating Code...
+Compiling...
+PersonODRS.cpp
+StudentRS.cpp
+StuInfoDlg.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+Domitory.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

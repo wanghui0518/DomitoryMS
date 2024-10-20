@@ -1,0 +1,125 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Domitory.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_DOMITORY_DIALOG             102
+#define IDD_ON_DUTY_PAGE1               107
+#define IDR_MAINFRAME                   128
+#define IDD_LOGIN                       129
+#define IDI_ICON1                       132
+#define IDB_BITMAP1                     134
+#define IDD_ON_DUTY                     135
+#define IDD_ON_DUTY_PAGE2               137
+#define IDD_ON_DUTY_PAGE3               138
+#define IDD_DIALOG1                     139
+#define IDD_DOMITORY_INFO               140
+#define IDD_ADD_DOMITORY                141
+#define IDD_STU_INFO                    142
+#define IDD_ADD_STU_RECORD              143
+#define IDD_FOREIGN_REG                 144
+#define IDD_ADD_F_RECORD                145
+#define IDD_ADD_ON_DUTY_R               146
+#define IDD_ADD_O_D_PERSON              147
+#define IDD_ADD_O_D_SCORE               148
+#define IDC_COMBO1                      1000
+#define IDC_PASSWORD                    1001
+#define IDC_COMBO2                      1001
+#define IDC_USER_NAME                   1002
+#define IDC_IDC_LOGIN_TITLE             1003
+#define IDC_BIG_TITLE                   1004
+#define IDC_ON_DUTY_INFO                1005
+#define IDC_DOMITORY_INFO               1006
+#define IDC_STUDENT_INFO                1007
+#define IDC_FOREIGN_INFO                1008
+#define IDC_D_CHECK_INFO                1009
+#define IDC_RELOGIN                     1010
+#define IDC_ON_DUTY_NAME                1011
+#define IDC_ON_DUTY_ID                  1012
+#define IDC_CHECK_BY_ID                 1013
+#define IDC_CHECK_BY_DATE               1014
+#define IDC_CHECK_BY_WEEK               1017
+#define IDC_CURLIST                     1019
+#define IDC_BUTTON1                     1020
+#define IDC_BUTTON2                     1021
+#define IDC_BUTTON3                     1022
+#define IDC_PERSON_LIST                 1022
+#define IDC_CHANGE_P_RECORD             1023
+#define IDC_RETRIEVE                    1023
+#define IDC_Change_D_I_RECORD           1023
+#define IDC_BUTTON4                     1023
+#define IDC_ADD_STU_RECORD              1023
+#define IDC_ADD_LEAVE_TIME              1023
+#define IDC_ADD_P_RECORD                1024
+#define IDC_ALL_RECORD                  1024
+#define IDC_DELETE_P_RECORD             1025
+#define IDC_CHECK_LIST                  1026
+#define IDC_DOMI_ID                     1027
+#define IDC_BEGIN_RETRIEVE              1028
+#define IDC_D_I_LIST                    1029
+#define IDC_DOMITORY_ID                 1030
+#define IDC_DOMITORY_NUM                1031
+#define IDC_LOW_NUMBER                  1032
+#define IDC_HIGH_NUMBER                 1033
+#define IDC_ADD_D_I_RECORD              1034
+#define IDC_A_D_ID                      1035
+#define IDC_A_D_T_I_Charge              1036
+#define IDC_DEL_D_I_RECORD              1036
+#define IDC_A_D_NUM                     1037
+#define IDC_STUDENT_NAME                1037
+#define IDC_A_D_REMARKS                 1038
+#define IDC_EDIT1                       1038
+#define IDC_STU_NAME                    1038
+#define IDC_ADD_STU_CLASS               1038
+#define IDC_F_NAME                      1038
+#define IDC_ADD_O_D_NAME                1038
+#define IDC_ADD_P_ID                    1038
+#define IDC_STU_DOMI_ID                 1039
+#define IDC_ADD_STU_NAME                1039
+#define IDC_VISIT_NAME                  1039
+#define IDC_F_DOMITORY                  1039
+#define IDC_ADD_O_D_ID                  1039
+#define IDC_ADD_P_STATE                 1039
+#define IDC_EDIT3                       1039
+#define IDC_EDIT2                       1040
+#define IDC_STU_DOMITORY_ID             1040
+#define IDC_ADD_STU_ID                  1040
+#define IDC_FORE_NAME                   1040
+#define IDC_ADD_O_D_REMARKS             1040
+#define IDC_ADD_P_NAME                  1040
+#define IDC_STU_RETRIEVE                1041
+#define IDC_ADD_STU_GRADE               1041
+#define IDC_ARRIVE_TIME                 1041
+#define IDC_STU_LIST                    1044
+#define IDC_DEL_STU_RECORD              1045
+#define IDC_CHANGE_STU_RECORD           1046
+#define IDC_ADD_STU_D_ID                1047
+#define IDC_ADD_STU_REMARKS             1048
+#define IDC_CHECK1                      1050
+#define IDC_V_DOMITORY                  1050
+#define IDC_CHECK2                      1051
+#define IDC_F_NAME_RETRIEVE             1051
+#define IDC_DATETIMEPICKER1             1052
+#define IDC_FOREIGN_LIST                1053
+#define IDC_ADD_FORE_RECORD             1054
+#define IDC_DEL_FORE_RECORD             1055
+#define IDC_REMARKS                     1056
+#define IDC_VISIT_DOMI_ID               1057
+#define IDC_F_B_RETRIEVE                1058
+#define IDC_DELETE_RECORD               1059
+#define IDC_CHANGE_RECORD               1060
+#define IDC_ADD_RECORD                  1061
+#define IDC_ADD_P_REMARKS               1066
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        149
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1067
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

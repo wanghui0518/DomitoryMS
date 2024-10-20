@@ -1,0 +1,146 @@
+# Microsoft Developer Studio Generated Dependency File, included by Domitory.mak
+
+.\AddDIRecordDlg.cpp : \
+	".\AddDIRecordDlg.h"\
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\DomitoryRS.h"\
+	".\LoginDlg.h"\
+	
+
+.\AdministratorRS.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	
+
+.\Domitory.cpp : \
+	".\AddDIRecordDlg.h"\
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\DomitoryDlg.h"\
+	".\DomitoryInfoDlg.h"\
+	".\DomitoryRS.h"\
+	".\LoginDlg.h"\
+	".\ODScoreRS.h"\
+	".\OnDutyDlg.h"\
+	".\OnDutyPage1.h"\
+	".\OnDutyPage2.h"\
+	".\OnDutyPage3.h"\
+	".\OnDutyRS.h"\
+	".\PersonODRS.h"\
+	
+
+.\Domitory.rc : \
+	".\res\Domitory.ico"\
+	".\res\Domitory.rc2"\
+	".\res\hp_folder_boy.ico"\
+	".\res\hp_folder_boy3.bmp"\
+	
+
+.\DomitoryDlg.cpp : \
+	".\AddDIRecordDlg.h"\
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\DomitoryDlg.h"\
+	".\DomitoryInfoDlg.h"\
+	".\DomitoryRS.h"\
+	".\LoginDlg.h"\
+	".\ODScoreRS.h"\
+	".\OnDutyDlg.h"\
+	".\OnDutyPage1.h"\
+	".\OnDutyPage2.h"\
+	".\OnDutyPage3.h"\
+	".\OnDutyRS.h"\
+	".\PersonODRS.h"\
+	
+
+.\DomitoryInfoDlg.cpp : \
+	".\AddDIRecordDlg.h"\
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\DomitoryInfoDlg.h"\
+	".\DomitoryRS.h"\
+	".\LoginDlg.h"\
+	
+
+.\DomitoryRS.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\DomitoryRS.h"\
+	".\LoginDlg.h"\
+	
+
+.\LoginDlg.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	
+
+.\ODScoreRS.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\ODScoreRS.h"\
+	
+
+.\OnDutyDlg.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\ODScoreRS.h"\
+	".\OnDutyDlg.h"\
+	".\OnDutyPage1.h"\
+	".\OnDutyPage2.h"\
+	".\OnDutyPage3.h"\
+	".\OnDutyRS.h"\
+	".\PersonODRS.h"\
+	
+
+.\OnDutyPage1.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\ODScoreRS.h"\
+	".\OnDutyDlg.h"\
+	".\OnDutyPage1.h"\
+	".\OnDutyPage2.h"\
+	".\OnDutyPage3.h"\
+	".\OnDutyRS.h"\
+	".\PersonODRS.h"\
+	
+
+.\OnDutyPage2.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\OnDutyPage2.h"\
+	".\PersonODRS.h"\
+	
+
+.\OnDutyPage3.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\ODScoreRS.h"\
+	".\OnDutyPage3.h"\
+	
+
+.\OnDutyRS.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\OnDutyRS.h"\
+	
+
+.\PersonODRS.cpp : \
+	".\AdministratorRS.h"\
+	".\Domitory.h"\
+	".\LoginDlg.h"\
+	".\PersonODRS.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"d:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	

@@ -1,0 +1,581 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Domitory.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Domitory.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\hp_folder_boy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Domitory"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Domitory 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DOMITORY_DIALOG DIALOGEX 0, 0, 320, 193
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "学生宿舍管理系统"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,250,165,65,20
+    LTEXT           "学生宿舍管理系统",IDC_BIG_TITLE,90,10,136,20
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,130,35,48,48
+    PUSHBUTTON      "值班员信息",IDC_ON_DUTY_INFO,45,95,57,21
+    PUSHBUTTON      "宿舍信息",IDC_DOMITORY_INFO,127,96,57,21
+    PUSHBUTTON      "学生信息",IDC_STUDENT_INFO,209,96,57,21
+    PUSHBUTTON      "外来人员登记",IDC_FOREIGN_INFO,80,126,57,21
+    PUSHBUTTON      "宿舍检查",IDC_D_CHECK_INFO,175,126,57,21
+    PUSHBUTTON      "重新登录",IDC_RELOGIN,177,165,65,20
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 149, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_USER_NAME,72,40,58,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,72,60,58,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,20,82,53,14
+    PUSHBUTTON      "取消",IDCANCEL,80,82,53,14
+    LTEXT           "宿舍管理系统登录",IDC_IDC_LOGIN_TITLE,31,7,91,16
+    LTEXT           "ODBC数据源：",IDC_STATIC,17,25,55,15
+    COMBOBOX        IDC_COMBO1,72,25,58,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "用户名：",IDC_STATIC,17,40,45,15
+    LTEXT           "密码：",IDC_STATIC,17,60,45,15
+END
+
+IDD_ON_DUTY DIALOG DISCARDABLE  0, 0, 295, 238
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "值班人员信息"
+FONT 10, "宋体"
+BEGIN
+END
+
+IDD_ON_DUTY_PAGE1 DIALOG DISCARDABLE  0, 0, 328, 231
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "当天值班人员"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List2",IDC_CURLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,69,314,133
+    PUSHBUTTON      "删除选中记录",IDC_DELETE_RECORD,202,207,54,17
+    PUSHBUTTON      "修改记录",IDC_CHANGE_RECORD,267,207,54,17
+    PUSHBUTTON      "增加记录",IDC_ADD_RECORD,137,207,54,17
+    PUSHBUTTON      "按条件检索",IDC_RETRIEVE,7,207,54,17
+    GROUPBOX        "检索条件",IDC_STATIC,7,6,314,54
+    LTEXT           "值班人员姓名：",IDC_STATIC,154,20,65,13
+    EDITTEXT        IDC_ON_DUTY_NAME,222,17,59,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_ON_DUTY_ID,93,18,56,15,ES_AUTOHSCROLL
+    CONTROL         "值班人员编号：",IDC_CHECK_BY_ID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,18,75,13
+    CONTROL         "值班日期：",IDC_CHECK_BY_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,37,57,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,93,36,62,15
+    PUSHBUTTON      "所有值班记录",IDC_ALL_RECORD,72,207,54,17
+END
+
+IDD_ON_DUTY_PAGE2 DIALOG DISCARDABLE  0, 0, 328, 231
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "值班人员列表"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_PERSON_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,314,191
+    PUSHBUTTON      "增加记录",IDC_ADD_P_RECORD,125,205,60,19
+    PUSHBUTTON      "删除记录",IDC_DELETE_P_RECORD,193,205,60,19
+    PUSHBUTTON      "修改记录",IDC_CHANGE_P_RECORD,261,205,60,19
+END
+
+IDD_ON_DUTY_PAGE3 DIALOG DISCARDABLE  0, 0, 328, 231
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "值班期间检查得分"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_CHECK_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,314,190
+    PUSHBUTTON      "删除记录",IDC_BUTTON1,181,205,66,19
+    PUSHBUTTON      "增加记录",IDC_BUTTON2,107,205,66,19
+    PUSHBUTTON      "修改记录",IDC_BUTTON3,255,205,66,19
+END
+
+IDD_DOMITORY_INFO DIALOG DISCARDABLE  0, 0, 271, 221
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "宿舍信息"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "条件检索",IDC_STATIC,5,5,258,55
+    EDITTEXT        IDC_DOMI_ID,60,15,41,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始检索",IDC_BEGIN_RETRIEVE,198,27,47,16
+    CONTROL         "List1",IDC_D_I_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,65,260,130
+    PUSHBUTTON      "添加记录",IDC_ADD_D_I_RECORD,100,200,51,14
+    PUSHBUTTON      "删除记录",IDC_DEL_D_I_RECORD,159,200,51,14
+    PUSHBUTTON      "修改记录",IDC_Change_D_I_RECORD,216,200,51,14
+    CONTROL         "宿舍号：",IDC_DOMITORY_ID,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,15,40,15
+    CONTROL         "住宿人数：",IDC_DOMITORY_NUM,"Button",
+                    BS_AUTORADIOBUTTON,10,40,40,15
+    LTEXT           "至",IDC_STATIC,95,43,10,10
+    EDITTEXT        IDC_LOW_NUMBER,60,40,30,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HIGH_NUMBER,110,40,30,16,ES_AUTOHSCROLL
+    LTEXT           "人",IDC_STATIC,145,43,14,10
+END
+
+IDD_ADD_DOMITORY DIALOG DISCARDABLE  0, 0, 203, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加宿舍记录"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,95,98,50,14
+    PUSHBUTTON      "取消",IDCANCEL,150,98,50,14
+    LTEXT           "宿舍号：",IDC_STATIC,7,7,34,10
+    EDITTEXT        IDC_A_D_ID,51,5,42,14,ES_AUTOHSCROLL
+    LTEXT           "宿舍人数：",IDC_STATIC,7,28,38,13
+    EDITTEXT        IDC_A_D_T_I_Charge,51,43,42,14,ES_AUTOHSCROLL
+    LTEXT           "班主任：",IDC_STATIC,7,46,38,13
+    EDITTEXT        IDC_A_D_NUM,51,24,42,14,ES_AUTOHSCROLL
+    LTEXT           "备注：",IDC_STATIC,7,62,38,13
+    EDITTEXT        IDC_A_D_REMARKS,50,60,146,30,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_STU_INFO DIALOG DISCARDABLE  0, 0, 234, 177
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生信息显示"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "检索条件",IDC_STATIC,5,5,225,51
+    CONTROL         "学生姓名：",IDC_STUDENT_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,15,45,15
+    EDITTEXT        IDC_STU_NAME,60,15,55,15,ES_AUTOHSCROLL
+    CONTROL         "宿舍号：",IDC_STU_DOMI_ID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,35,45,15
+    EDITTEXT        IDC_STU_DOMITORY_ID,60,35,55,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "检索",IDC_STU_RETRIEVE,160,20,55,20
+    CONTROL         "List3",IDC_STU_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,65,225,90
+    PUSHBUTTON      "修改记录",IDC_CHANGE_STU_RECORD,180,160,50,15
+    PUSHBUTTON      "删除记录",IDC_DEL_STU_RECORD,125,160,50,15
+    PUSHBUTTON      "增加记录",IDC_ADD_STU_RECORD,70,160,50,15
+END
+
+IDD_ADD_STU_RECORD DIALOG DISCARDABLE  0, 0, 192, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加记录"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,135,109,50,14
+    LTEXT           "学生姓名：",IDC_STATIC,99,9,40,9
+    LTEXT           "班级：",IDC_STATIC,7,28,35,9
+    EDITTEXT        IDC_ADD_STU_CLASS,47,26,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_STU_NAME,139,7,45,13,ES_AUTOHSCROLL
+    LTEXT           "学生编号：",IDC_STATIC,7,9,40,9
+    EDITTEXT        IDC_ADD_STU_ID,47,7,45,13,ES_AUTOHSCROLL
+    LTEXT           "年级：",IDC_STATIC,99,29,38,9
+    EDITTEXT        IDC_ADD_STU_GRADE,139,27,45,13,ES_AUTOHSCROLL
+    LTEXT           "宿舍号：",IDC_STATIC,7,50,37,11
+    EDITTEXT        IDC_ADD_STU_D_ID,47,47,45,13,ES_AUTOHSCROLL
+    LTEXT           "备注：",IDC_STATIC,7,68,34,11
+    EDITTEXT        IDC_ADD_STU_REMARKS,7,80,177,23,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "增加",IDC_ADD_STU_RECORD,82,109,50,14
+END
+
+IDD_FOREIGN_REG DIALOG DISCARDABLE  0, 0, 307, 194
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "外来人员信息登记"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "检索条件",IDC_STATIC,5,5,295,51
+    CONTROL         "访问宿舍：",IDC_V_DOMITORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,35,45,15
+    CONTROL         "姓名：",IDC_F_NAME_RETRIEVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,15,35,15
+    EDITTEXT        IDC_F_NAME,60,15,60,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "检索",IDC_F_B_RETRIEVE,165,20,70,20
+    CONTROL         "List1",IDC_FOREIGN_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,62,295,103
+    PUSHBUTTON      "删除记录",IDC_DEL_FORE_RECORD,246,171,50,16
+    PUSHBUTTON      "增加记录",IDC_ADD_FORE_RECORD,134,171,50,16
+    PUSHBUTTON      "添加离开时间",IDC_ADD_LEAVE_TIME,191,171,50,16
+    EDITTEXT        IDC_F_DOMITORY,60,35,60,15,ES_AUTOHSCROLL
+END
+
+IDD_ADD_F_RECORD DIALOG DISCARDABLE  0, 0, 247, 161
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "外来人员信息登记"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,135,140,50,14
+    PUSHBUTTON      "取消",IDCANCEL,190,140,50,14
+    LTEXT           "姓名：",IDC_STATIC,5,10,25,15
+    LTEXT           "拜访宿舍：",IDC_STATIC,5,35,40,15
+    EDITTEXT        IDC_VISIT_DOMI_ID,50,30,60,17,ES_AUTOHSCROLL
+    LTEXT           "拜访对象：",IDC_STATIC,120,35,39,15
+    EDITTEXT        IDC_VISIT_NAME,160,30,60,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORE_NAME,50,5,60,17,ES_AUTOHSCROLL
+    LTEXT           "到达时间：",IDC_STATIC,5,65,40,15
+    EDITTEXT        IDC_ARRIVE_TIME,50,60,80,20,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "备注：",IDC_STATIC,5,90,40,15
+    EDITTEXT        IDC_REMARKS,5,105,235,25,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_ADD_ON_DUTY_R DIALOG DISCARDABLE  0, 0, 177, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加值班记录"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,64,121,50,14
+    PUSHBUTTON      "取消",IDCANCEL,120,121,50,14
+    LTEXT           "编号：",IDC_STATIC,7,9,23,13
+    LTEXT           "姓名：",IDC_STATIC,7,31,24,14
+    EDITTEXT        IDC_ADD_O_D_NAME,45,28,50,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_O_D_ID,45,7,50,16,ES_AUTOHSCROLL
+    LTEXT           "值班日期：",IDC_STATIC,7,53,37,12
+    COMBOBOX        IDC_COMBO1,45,51,50,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,102,51,50,47,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "备注：",IDC_STATIC,7,75,40,13
+    EDITTEXT        IDC_ADD_O_D_REMARKS,7,90,161,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_ADD_O_D_PERSON DIALOG DISCARDABLE  0, 0, 168, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加值班人员记录"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,58,88,50,14
+    PUSHBUTTON      "取消",IDCANCEL,111,88,50,14
+    LTEXT           "编号：",IDC_STATIC,7,10,27,11
+    LTEXT           "姓名：",IDC_STATIC,7,27,25,12
+    LTEXT           "状态：",IDC_STATIC,89,27,27,12
+    EDITTEXT        IDC_ADD_P_ID,38,7,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_P_STATE,117,26,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_P_NAME,38,26,44,14,ES_AUTOHSCROLL
+    LTEXT           "备注：",IDC_STATIC,7,47,27,11
+    EDITTEXT        IDC_ADD_P_REMARKS,7,60,154,23,ES_AUTOHSCROLL
+END
+
+IDD_ADD_O_D_SCORE DIALOG DISCARDABLE  0, 0, 200, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,82,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,95,50,14
+    LTEXT           "检查时间(年--月)：",IDC_STATIC,7,7,56,12
+    LTEXT           "值班人员编号：",IDC_STATIC,7,28,61,12
+    EDITTEXT        IDC_EDIT1,68,26,43,13,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,68,7,48,13
+    EDITTEXT        IDC_EDIT3,145,25,48,13,ES_AUTOHSCROLL
+    LTEXT           "姓名：",IDC_STATIC,117,27,25,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Domitory Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Domitory\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Domitory.EXE\0"
+            VALUE "ProductName", "Domitory 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DOMITORY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_ON_DUTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_ON_DUTY_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_ON_DUTY_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_ON_DUTY_PAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DOMITORY_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_ADD_DOMITORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_STU_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_ADD_STU_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_FOREIGN_REG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_ADD_F_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_ADD_ON_DUTY_R, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_ADD_O_D_PERSON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_ADD_O_D_SCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\hp_folder_boy3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Domitory(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Domitory.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
