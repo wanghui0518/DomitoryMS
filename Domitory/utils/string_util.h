@@ -8,6 +8,8 @@
 #include <xlocbuf>
 #include <codecvt>
 
+using namespace std;
+
 class string_util
 {
 public:
