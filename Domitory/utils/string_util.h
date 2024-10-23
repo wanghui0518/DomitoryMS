@@ -16,6 +16,8 @@ using namespace std;
 #define string_t string
 #endif
 
+#define CODE_CONVERT_USE_WIN32
+
 class string_util
 {
 public:
