@@ -23,5 +23,6 @@ class string_util
 public:
 	string_util();
 	~string_util();
+        static std::string& trim_l(std::string &str);
 };
 
