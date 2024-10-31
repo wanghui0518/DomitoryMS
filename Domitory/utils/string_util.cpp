@@ -31,3 +31,9 @@ std::string& string_util::trim(std::string &str)
 {
 	return trim_l(trim_r(str));
 }
+
+std::string& string_util::reverse(std::string &str)
+{
+	std::reverse(str.begin(), str.end());
+	return str;
+}
