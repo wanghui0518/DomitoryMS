@@ -64,3 +64,10 @@ std::string string_util::to_lower_copy(std::string &str)
 	transform(string_str_ret.begin(), string_str_ret.end(), string_str_ret.begin(), ::tolower);
 	return string_str_ret;
 }
+
+std::string string_util::left(std::string &str, size_t n_count)
+{
+	if (str.size() <= 0 || n_count <= 0) return "";
+	if (str.size() <= n_count) return str;
+	return str.substr(0, n_count);
+}
