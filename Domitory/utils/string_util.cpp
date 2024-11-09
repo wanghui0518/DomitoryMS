@@ -71,3 +71,10 @@ std::string string_util::left(std::string &str, size_t n_count)
 	if (str.size() <= n_count) return str;
 	return str.substr(0, n_count);
 }
+
+std::string string_util::right(std::string &str, size_t n_count)
+{
+	if (str.size() <= 0 || n_count <= 0) return "";
+	if (str.size() <= n_count) return str;
+	return str.substr(str.size() - n_count, n_count);
+}
