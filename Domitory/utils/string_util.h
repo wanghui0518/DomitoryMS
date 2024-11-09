@@ -35,5 +35,6 @@ public:
 	static std::string to_lower_copy(std::string &str);
 
 	static std::string left(std::string &str, size_t n_count);
+	static std::string right(std::string &str, size_t n_count)
 };
 
