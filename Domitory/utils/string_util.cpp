@@ -78,3 +78,9 @@ std::string string_util::right(std::string &str, size_t n_count)
 	if (str.size() <= n_count) return str;
 	return str.substr(str.size() - n_count, n_count);
 }
+
+std::string string_util::mid(std::string &str, size_t i_start, size_t n_count)
+{
+	if (str.size() <= 0 || n_count <= 0 || i_start >= str.size()) return "";
+	return str.substr(i_start, n_count);
+}
