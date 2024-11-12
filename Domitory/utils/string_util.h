@@ -37,5 +37,6 @@ public:
 	static std::string left(std::string &str, size_t n_count);
 	static std::string right(std::string &str, size_t n_count);
 	static std::string mid(std::string &str, size_t i_start, size_t n_count);
+	static std::string mid_l_r(std::string &str, std::string str_left, std::string str_right, bool b_inc_start = false, bool b_inc_end = false);
 };
 
