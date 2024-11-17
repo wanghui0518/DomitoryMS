@@ -126,3 +126,18 @@ std::string string_util::span_including(std::string& str, std::string str_key)
 
 	return str_ret;
 }
+
+std::string string_util::span_excluding(std::string& str, std::string str_key)
+{
+	if (str.size() <= 0 || str_key.size() <= 0) return str;
+
+	std::string str_ret;
+	std::size_t found = str.find_first_not_of(str_key);
+	while (found != std::string::npos)
+	{
+		str_ret.push_back(str[found]);
+		found = str.find_first_not_of(str_key, found + 1);
+	}
+
+	return str_ret;
+}
