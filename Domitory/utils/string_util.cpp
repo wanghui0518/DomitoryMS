@@ -141,3 +141,10 @@ std::string string_util::span_excluding(std::string& str, std::string str_key)
 
 	return str_ret;
 }
+
+bool string_util::start_with(std::string &str, std::string str_begin)
+{
+	if (str.size() <= 0 || str_begin.size() <= 0) return false;
+	bool startwith = str.compare(0, str_begin.size(), str_begin) == 0;
+	return startwith;
+}
