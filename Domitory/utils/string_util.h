@@ -42,5 +42,6 @@ public:
 	static std::string span_excluding(std::string& str, std::string str_key);
 
 	static bool start_with(std::string &str, std::string str_begin);
+	static bool end_with(std::string &str, std::string str_end);
 };
 
