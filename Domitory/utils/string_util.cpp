@@ -148,3 +148,10 @@ bool string_util::start_with(std::string &str, std::string str_begin)
 	bool startwith = str.compare(0, str_begin.size(), str_begin) == 0;
 	return startwith;
 }
+
+bool string_util::end_with(std::string &str, std::string str_end)
+{
+	if (str.size() <= 0 || str_end.size() <= 0) return false;
+	bool endwith = str.compare(str.size() - str_end.size(), str_end.size(), str_end) == 0;
+	return endwith;
+}
