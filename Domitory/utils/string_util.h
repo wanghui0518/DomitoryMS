@@ -43,5 +43,6 @@ public:
 
 	static bool start_with(std::string &str, std::string str_begin);
 	static bool end_with(std::string &str, std::string str_end);
+	static bool contain(std::string &str, std::string str_sub);
 };
 
