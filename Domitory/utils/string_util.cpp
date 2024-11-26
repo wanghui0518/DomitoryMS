@@ -155,3 +155,11 @@ bool string_util::end_with(std::string &str, std::string str_end)
 	bool endwith = str.compare(str.size() - str_end.size(), str_end.size(), str_end) == 0;
 	return endwith;
 }
+
+bool string_util::contain(std::string &str, std::string str_sub)
+{
+	if (str.size() <= 0 || str_sub.size() <= 0 || str_sub.size() > str.size()) return false;
+	std::string::size_type pos = str.find(str_sub);
+	if (pos == std::string::npos) return false;
+	return true;
+}
