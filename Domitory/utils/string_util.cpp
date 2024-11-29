@@ -163,3 +163,8 @@ bool string_util::contain(std::string &str, std::string str_sub)
 	if (pos == std::string::npos) return false;
 	return true;
 }
+
+bool string_util::is_empty(std::string &str)
+{
+	return str.size() > 0 ? true : false;
+}
