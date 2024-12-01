@@ -45,5 +45,7 @@ public:
 	static bool end_with(std::string &str, std::string str_end);
 	static bool contain(std::string &str, std::string str_sub);
 	static bool is_empty(std::string &str);
+
+	static std::string format(const std::string fmt, ...);
 };
 
