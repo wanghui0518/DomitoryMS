@@ -196,3 +196,33 @@ std::string string_util::format(const std::string fmt, ...)
 
 	return str_ret;
 }
+
+std::string& string_util::append_format(std::string& str, const std::string fmt, ...)
+{
+	std::string str_ret;
+	int size = ((int)fmt.size()) * 2 + 50;   // Use a rubric appropriate for your code
+	va_list ap;
+	while (true)
+	{
+		// Maximum two passes on a POSIX system...
+		str_ret.resize(size);
+		va_start(ap, fmt);
+		int n = vsnprintf((char *)str_ret.data(), size, fmt.c_str(), ap);
+		va_end(ap);
+		if (n > -1 && n < size)
+		{
+			// Everything worked
+			str_ret.resize(n);
+			str += str_ret;
+			return str;
+		}
+
+		if (n > -1)  // Needed size returned
+			size = n + 1;   // For null char
+		else
+			size *= 2;      // Guess at a larger size
+	}
+
+	str += str_ret;
+	return str;
+}
