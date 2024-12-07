@@ -226,3 +226,10 @@ std::string& string_util::append_format(std::string& str, const std::string fmt,
 	str += str_ret;
 	return str;
 }
+
+std::string& string_util::erase(std::string& str, char ch)
+{
+	if (str.size() <= 0) return str;
+	str.erase(remove_if(str.begin(), str.end(), bind2nd(equal_to<char>(), ch)), str.end()); //
+	return str;
+}
