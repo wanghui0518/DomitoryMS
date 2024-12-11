@@ -233,3 +233,11 @@ std::string& string_util::erase(std::string& str, char ch)
 	str.erase(remove_if(str.begin(), str.end(), bind2nd(equal_to<char>(), ch)), str.end()); //
 	return str;
 }
+
+bool string_util::replace(std::string& str, const std::string& from, const std::string& to)
+{
+	size_t start_pos = str.find(from);
+	if (start_pos == std::string::npos) return false;
+	str.replace(start_pos, from.length(), to);
+	return true;
+}
