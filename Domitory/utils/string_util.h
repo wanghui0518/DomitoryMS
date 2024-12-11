@@ -50,5 +50,6 @@ public:
 	static std::string& append_format(std::string& str, const std::string fmt, ...);
 	static std::string& erase(std::string& str, char ch);
 	static bool replace(std::string& str, const std::string& from, const std::string& to);
+	static void replace_all(std::string& str, const std::string& from, const std::string& to);
 };
 
