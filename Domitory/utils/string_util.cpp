@@ -252,3 +252,8 @@ void string_util::replace_all(std::string& str, const std::string& from, const s
 		start_pos += to.length(); //In case 'to' contains 'from', like replacing 'x' with 'yx'
 	}
 }
+
+int string_util::string_i_cmp(std::string lhs, std::string rhs)
+{
+	return _stricmp(lhs.c_str(), rhs.c_str());
+}
