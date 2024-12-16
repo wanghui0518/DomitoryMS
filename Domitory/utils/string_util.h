@@ -52,5 +52,6 @@ public:
 	static bool replace(std::string& str, const std::string& from, const std::string& to);
 	static void replace_all(std::string& str, const std::string& from, const std::string& to);
 	static int string_i_cmp(std::string lhs, std::string rhs);
+	static void split(std::string& str, std::string pattern, vector<std::string>& arrout);
 };
 
