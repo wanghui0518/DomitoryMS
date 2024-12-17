@@ -257,3 +257,29 @@ int string_util::string_i_cmp(std::string lhs, std::string rhs)
 {
 	return _stricmp(lhs.c_str(), rhs.c_str());
 }
+
+void string_util::split(std::string& str, std::string pattern, vector<std::string>& arrout)
+{
+	arrout.clear();
+	size_t idx = 0, pos = 0;
+	size_t size = str.size();
+	for (idx = 0; idx < size; ++idx)
+	{
+		pos = str.find(pattern, idx);
+		if (pos != std::string::npos)
+		{
+			std::string s = str.substr(idx, pos - idx);
+			if (s.size() > 0) arrout.push_back(s);
+			idx = pos + pattern.size() - 1;
+		}
+		else
+		{
+			if (idx < size)
+			{
+				std::string s = str.substr(idx, str.size() - idx);
+				if (s.size() > 0) arrout.push_back(s);
+				break;
+			}
+		}
+	}
+}
