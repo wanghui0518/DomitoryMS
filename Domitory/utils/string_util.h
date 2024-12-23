@@ -54,5 +54,7 @@ public:
 	static int string_i_cmp(std::string lhs, std::string rhs);
 	static void split(std::string& str, std::string pattern, vector<std::string>& arrout);
 	static std::string join(std::vector<string>& arr_string, std::string pattern = "");
+
+	static std::wstring a2w_string(std::string str_a);
 };
 
