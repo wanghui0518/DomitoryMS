@@ -283,3 +283,16 @@ void string_util::split(std::string& str, std::string pattern, vector<std::strin
 		}
 	}
 }
+
+std::string string_util::join(std::vector<string>& arr_string, std::string pattern)
+{
+	string str_ret;
+	if (arr_string.size() <= 0) return "";
+	for (size_t idx = 0; idx < arr_string.size(); ++idx)
+	{
+		if (str_ret.size() <= 0) str_ret = arr_string[idx];
+		else str_ret += pattern + arr_string[idx];
+	}
+
+	return str_ret;
+}
