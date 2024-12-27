@@ -296,3 +296,8 @@ std::string string_util::join(std::vector<string>& arr_string, std::string patte
 
 	return str_ret;
 }
+
+std::wstring string_util::a2w_string(std::string str_a)
+{
+	return gbk2unicode(str_a);
+}
