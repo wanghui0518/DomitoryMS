@@ -56,5 +56,6 @@ public:
 	static std::string join(std::vector<string>& arr_string, std::string pattern = "");
 
 	static std::wstring a2w_string(std::string str_a);
+	static std::string w2a_string(std::wstring str_w);
 };
 
