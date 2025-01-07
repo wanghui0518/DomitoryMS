@@ -301,3 +301,8 @@ std::wstring string_util::a2w_string(std::string str_a)
 {
 	return gbk2unicode(str_a);
 }
+
+std::string string_util::w2a_string(std::wstring str_w)
+{
+	return unicode2gbk(str_w);
+}
