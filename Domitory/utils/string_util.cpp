@@ -306,3 +306,13 @@ std::string string_util::w2a_string(std::wstring str_w)
 {
 	return unicode2gbk(str_w);
 }
+
+string_t string_util::to_string(std::string str_a)
+{
+#ifdef _UNICODE
+	std::wstring str_ret = a2w_string(str_a);
+#else
+	std::string str_ret = str_a;
+#endif
+	return str_ret;
+}
