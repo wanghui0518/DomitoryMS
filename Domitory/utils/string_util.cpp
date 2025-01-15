@@ -316,3 +316,13 @@ string_t string_util::to_string(std::string str_a)
 #endif
 	return str_ret;
 }
+
+string_t string_util::to_string(std::wstring str_w)
+{
+#ifdef _UNICODE
+	std::wstring str_ret = str_w;
+#else
+	std::string str_ret = w2a_string(str_w);
+#endif
+	return str_ret;
+}
