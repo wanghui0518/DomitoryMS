@@ -326,3 +326,15 @@ string_t string_util::to_string(std::wstring str_w)
 #endif
 	return str_ret;
 }
+
+std::wstring string_util::to_wstring(string_t str)
+{
+	std::wstring str_ret;
+
+#ifdef _UNICODE
+	str_ret = str;
+#else
+	str_ret = a2w_string(str);
+#endif
+	return str_ret;
+}
