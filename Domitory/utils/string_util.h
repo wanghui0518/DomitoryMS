@@ -62,5 +62,6 @@ public:
 	static string_t to_string(std::wstring str_w);
 
 	static std::wstring to_wstring(string_t str);
+	static std::string to_astring(string_t str);
 };
 
