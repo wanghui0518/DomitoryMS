@@ -338,3 +338,15 @@ std::wstring string_util::to_wstring(string_t str)
 #endif
 	return str_ret;
 }
+
+std::string string_util::to_astring(string_t str)
+{
+	std::string str_ret;
+
+#ifdef _UNICODE
+	str_ret = w2a_string(str);
+#else
+	str_ret = str;
+#endif
+	return str_ret;
+}
