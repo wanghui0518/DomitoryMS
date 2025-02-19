@@ -70,5 +70,6 @@ public:
 	static std::string gbk2utf8(std::string str_gbk);
 	static std::string utf82gbk(std::string str_utf8);
 	static std::string unicode2utf8(std::wstring str_unicode);
+	static std::wstring utf82unicode(std::string str_utf8);
 };
 
