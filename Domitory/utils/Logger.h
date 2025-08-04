@@ -30,7 +30,19 @@ namespace CPlusPlusLogging
    #define LOG_TRACE(x)    Logger::getInstance()->trace(x)
    #define LOG_DEBUG(x)    Logger::getInstance()->debug(x)
 
+   typedef enum LOG_LEVEL
+   {
+      DISABLE_LOG       = 1,
+      LOG_LEVEL_INFO	   = 2,
+      LOG_LEVEL_BUFFER	= 3,
+      LOG_LEVEL_TRACE   = 4,
+      LOG_LEVEL_DEBUG   = 5,
+      ENABLE_LOG        = 6,
+   }LogLevel;
+
+
 }
 
 
 #endif // End of _LOGGER_H_
+
