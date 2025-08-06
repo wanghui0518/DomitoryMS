@@ -40,9 +40,17 @@ namespace CPlusPlusLogging
       ENABLE_LOG        = 6,
    }LogLevel;
 
+   typedef enum LOG_TYPE
+   {
+      NO_LOG            = 1,
+      CONSOLE           = 2,
+      FILE_LOG          = 3,
+   }LogType;
+
 
 }
 
 
 #endif // End of _LOGGER_H_
+
 
