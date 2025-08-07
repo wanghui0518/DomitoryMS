@@ -48,9 +48,31 @@ namespace CPlusPlusLogging
    }LogType;
 
 
+   class Logger
+   {
+      public:
+         static Logger* getInstance() throw ();
+
+
+      private:
+         static Logger*          m_Instance;
+         std::ofstream           m_File;
+
+#ifdef	WIN32
+         CRITICAL_SECTION        m_Mutex;
+#else
+         pthread_mutexattr_t     m_Attr; 
+         pthread_mutex_t         m_Mutex;
+#endif
+
+         LogLevel                m_LogLevel;
+         LogType                 m_LogType;
+   };
+
 }
 
 
 #endif // End of _LOGGER_H_
+
 
 
